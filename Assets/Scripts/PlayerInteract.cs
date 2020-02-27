@@ -17,7 +17,7 @@ public class PlayerInteract : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D other)
     {
-        if (other.gameObject.tag == "Interactable" && Input.GetKeyDown(KeyCode.E))
+        if (other.gameObject.tag == "Interactable" && Input.GetKey(KeyCode.E))
         {
             Debug.Log("Picking Up Object");
             Destroy(other.gameObject);
